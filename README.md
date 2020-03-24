@@ -1,2 +1,3 @@
 # Tomasz-Szkonter.github.io
-Portfolio site of mine. 
+
+Portfolio site of mine.
