@@ -97,6 +97,14 @@ main {
   color: var(--text-secondary);
 }
 
+i.nav-icon {
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+  font-size: 2rem;
+  color: var(--main-green);
+}
+
 .link-text {
   display: none;
   margin-left: 1rem;
@@ -607,6 +615,70 @@ h2.contact__title::after {
 .contact__right {
   width: 50%;
   padding: 10px;
+}
+
+.welcome__social-link {
+  display: flex;
+  align-items: center;
+}
+
+form {
+  padding: 45px 0;
+  background: var(--bg-primary);
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(46, 204, 113, 0.3);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(46, 204, 113, 0.3);
+  box-shadow: 0px 0px 8px 1px rgba(46, 204, 113, 0.3);
+}
+
+form > div {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  padding: 10px 0;
+}
+
+form > div > input,
+form > div > textarea {
+  width: 70%;
+  font-family: inherit;
+}
+
+form > div > textarea {
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+  min-height: 120px;
+}
+
+form > div > input:active,
+form > div > textarea:active,
+form > div > input:focus,
+form > div > textarea:focus {
+  outline-color: var(--main-green);
+}
+
+.form__button-box {
+  justify-content: center;
+  align-items: center;
+}
+
+.form__button-box > button {
+  width: 60%;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  color: var(--text-secondary);
+  background: transparent;
+}
+
+.form__button-box > button:hover {
+  background: var(--main-green);
 }
 
 footer#footer {
