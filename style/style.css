@@ -497,7 +497,7 @@ h2.projects__title::after {
 .projects__item {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   box-sizing: border-box;
   padding: 10px;
   margin-bottom: 20px;
@@ -509,11 +509,103 @@ a.projects__link {
 
 .projects__item__description {
   width: 50%;
+  box-sizing: border-box;
+  padding: 10px 20px;
 }
 
 img.projects__item__image {
   width: 100%;
   filter: grayscale(1);
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
 }
 
+a.projects__link {
+  color: var(--main-green);
+  text-decoration: none;
+}
+
+h3.projects__item__title {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+}
+
+a.projects__external-link {
+  color: var(--additional-green);
+  font-size: 1.6rem;
+  padding: 10px;
+}
+
+.projects__item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.projects__item__image.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  height: 230px;
+  background: #ffffff;
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    #ffffff 9%,
+    #e5e5e5 100%
+  );
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    #ffffff 9%,
+    #e5e5e5 100%
+  );
+  background: radial-gradient(ellipse at center, #ffffff 9%, #e5e5e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=1 );
+}
+
+a.projects__link {
+  color: var(--main-green);
+  text-decoration: none;
+}
+
+section#contact {
+  padding: 10px;
+}
+
+.contact__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2.contact__title {
+  font-size: 3rem;
+}
+
+h2.contact__title::after {
+  content: "";
+  position: relative;
+  width: 262px;
+  height: 50px;
+  border: 2px solid var(--main-green);
+  background: transparent;
+  display: block;
+  bottom: 66px;
+  left: -22px;
+  z-index: -1;
+  margin: 0 !important;
+}
+
+.contact__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contact__left,
+.contact__right {
+  width: 50%;
+  padding: 10px;
+}
 /* -----------------ANIMATIONS----------------- */
