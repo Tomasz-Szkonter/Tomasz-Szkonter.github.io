@@ -702,6 +702,11 @@ form > div > textarea:focus {
   background: transparent;
 }
 
+.recaptcha-container {
+  display: flex;
+  justify-content: center;
+}
+
 .form__button-box > button:hover {
   background: var(--main-green);
 }
