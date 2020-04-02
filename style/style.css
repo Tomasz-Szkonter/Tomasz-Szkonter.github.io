@@ -626,6 +626,7 @@ h2.contact__title::after {
   width: 100%;
   display: flex;
   align-items: center;
+  flex-direction: column-reverse;
 }
 
 .contact__left {
@@ -734,6 +735,9 @@ p.footer__text {
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
+  body {
+    margin-bottom: 5rem;
+  }
   h1.welcome__title {
     width: 100%;
   }
@@ -795,6 +799,23 @@ p.footer__text {
   .contact__left {
     width: 100%;
   }
+
+  form > div {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form > div > input,
+  form > div > textarea {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  footer#footer {
+    margin-left: 0;
+  }
 }
 
 /* Extra-Small screens */
@@ -835,24 +856,16 @@ p.footer__text {
   .contact__right {
     padding: 0;
   }
-
-  form > div {
-    width: 90%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  form > div > input,
-  form > div > textarea {
-    margin-top: 10px;
-  }
 }
 
 /* Large screens */
 @media only screen and (min-width: 1200px) {
   h1.welcome__title {
     width: 90%;
+  }
+
+  .welcome__bottom {
+    padding: 30px 0 200px;
   }
 }
 /* -----------------ANIMATIONS----------------- */
